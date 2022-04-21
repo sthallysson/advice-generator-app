@@ -8,7 +8,7 @@ interface ButtonChangeAdviceProps {
 export function ButtonChangeAdvice({ onClick }: ButtonChangeAdviceProps) {
   return (
     <button onClick={onClick}>
-      <img src="../../public/icon-dice.svg" alt="dice button" />
+      <img src="../images/icon-dice.svg" alt="dice button" />
     </button>
   );
 }

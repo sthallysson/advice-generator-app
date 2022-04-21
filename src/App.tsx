@@ -25,7 +25,7 @@ function App() {
     <main>
       <p>ADVICE #{id}</p>
       <q>{advice}</q>
-      <img src="../public/pattern-divider-desktop.svg" alt="divisor" />
+      <img src="./images/pattern-divider-desktop.svg" alt="divisor" />
       <ButtonChangeAdvice onClick={reload} />
     </main>
   );
