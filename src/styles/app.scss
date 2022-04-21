@@ -1,0 +1,53 @@
+main {
+  background: var(--dark-grayish-blue);
+  width: 500px;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+
+  p {
+    text-align: center;
+    color: var(--green);
+    font-weight: 500;
+    letter-spacing: 0.3em;
+
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  q {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+
+  > img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    position: absolute;
+    z-index: 9999;
+    left: 221px;
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 87.5%;
+  }
+  main {
+    width: 100%;
+
+    button {
+      position: static;
+      margin: auto;
+      margin-bottom: -65px;
+    }
+  }
+}
