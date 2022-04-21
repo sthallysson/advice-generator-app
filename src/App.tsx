@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ButtonChangeAdvice } from "./components/ButtonChangeAdvice";
 import "./styles/app.scss";
+import divider from "./images/pattern-divider-desktop.svg";
 
 function App() {
   const [id, setId] = useState(0);
@@ -25,7 +26,7 @@ function App() {
     <main>
       <p>ADVICE #{id}</p>
       <q>{advice}</q>
-      <img src="./images/pattern-divider-desktop.svg" alt="divisor" />
+      <img src={divider} alt="divisor" />
       <ButtonChangeAdvice onClick={reload} />
     </main>
   );

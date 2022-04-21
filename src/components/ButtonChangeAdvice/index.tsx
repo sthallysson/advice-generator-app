@@ -1,5 +1,5 @@
-import axios from "axios";
 import "./styles.scss";
+import dice from "../../images/icon-dice.svg";
 
 interface ButtonChangeAdviceProps {
   onClick: () => void;
@@ -8,7 +8,7 @@ interface ButtonChangeAdviceProps {
 export function ButtonChangeAdvice({ onClick }: ButtonChangeAdviceProps) {
   return (
     <button onClick={onClick}>
-      <img src="../images/icon-dice.svg" alt="dice button" />
+      <img src={dice} alt="dice button" />
     </button>
   );
 }
